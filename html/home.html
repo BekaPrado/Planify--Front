@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planify - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/home.css" />
+  <script src="../js/home.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/logo.png" alt="Logo">
+    </div>
+    <div class="search">
+  <input type="text" id="input-pesquisa" placeholder="Pesquisar shows, eventos, teatros">
+</div>
+
+    <div class="profile">
+      <button>
+        <a href="./perfil.html">
+        <img src="../img/PERFIL.avif" alt="Descrição da imagem">
+</a>
+      </button>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="slider">
+        <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+
+            <!--Slide imagens-->
+            <div class="slide first">
+                <img src="https://images.sympla.com.br/67d1e4e6eb5c1-lg.jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="https://assets.bileto.sympla.com.br/eventmanager/production/8l1lfl531un4lsmfhju9n7m746rpb6jfnpsf3v83o2e5bvq2pm34mnd303im5c1lisvatrltoh52f8evib36den1ijh1rp4ca2eqi3.jpeg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="https://images.sympla.com.br/6835fa41d942b-lg.png" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="https://images.sympla.com.br/6826073f6cca1-lg.png" alt="Imagem 4">
+            </div>
+            <div class="slide">
+                <img src="https://images.sympla.com.br/6818d12fed265-lg.png" alt="Imagem 5">
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+
+         <script src="../js/carrossel.js" defer ></script>
+    </div>
+
+    <div class="filters">
+      <select id="categoria">
+        <option value="">Todas as categorias</option>
+      </select>
+    
+      <select id="estados">
+        <option value="">Todos os estados</option>
+      </select>
+    
+      <a href="criarEvento.html" class="create">Criar Evento</a>
+    </div>
+    
+
+   <section class="events-section">
+      <h2>Conheça os Eventos:</h2>
+      <div class="events-grid" id="eventos-container"></div>
+    </section>
+  </main> 
+
+  <footer>
+    <div class="logo-footer">
+      <img src="../img/logo.png" alt="Logo">
+    </div>
+    <p>Sobre nós:<br>
+    A Planify é sua plataforma para descobrir, divulgar e gerenciar eventos com praticidade. 
+    Conectamos organizadores e participantes em um só lugar.<br>
+    Encontre, crie e participe de eventos de forma simples e eficiente!</p>
+  </footer>
+</body>
+</html>

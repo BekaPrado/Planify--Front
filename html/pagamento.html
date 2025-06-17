@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagamento</title>
+  <link rel="stylesheet" href="../css/pagamento.css">
+</head>
+<body>
+  <div class="card">
+    <div class="top-section">
+      <div class="info">
+        <h1></h1>
+        <p><strong>Hora:</strong> <span id="hora"></span></p>
+        <p><strong>Data:</strong> <span id="data"></span></p>
+        <p><strong>Local:</strong> <span id="local"></span></p>
+      </div>
+      <div class="image-container">
+        <img src="" alt="Banner do espetáculo" class="banner-img">
+      </div>
+    </div>
+
+    <div class="pix-section">
+      <div class="pix-header">
+        <img src="../img/pix.png" alt="Pix" class="pix-logo">
+        <h2>Finalize o pagamento com PIX para garantir o seu ingresso!</h2>
+      </div>
+
+      <div class="pix-content">
+        <div class="pix-instructions">
+          <ol>
+            <li>Abra o aplicativo do seu banco</li>
+            <li>Na área de PIX, escolha a opção de pagar com QR CODE</li>
+            <li>Aponte a câmera do celular para escanear o código acima. Confira se o CNPJ é xxxxxxxxxxxxxxxxx.</li>
+            <li>Siga as instruções do aplicativo para concluir a compra</li>
+          </ol>
+          <hr>
+          <p>Ou se preferir, utilize Pix Copia e Cola. <strong>Copiar código</strong></p>
+        </div>
+        <div class="qr-area">
+          <img src="../img/qrCode.png" alt="QR Code" class="qr-code">
+          <p><strong>Valor do ingresso:</strong><br>R$ <span id="valor"></span></p>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/pagamento.js"></script>
+</body>
+</html>

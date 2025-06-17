@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planify - Recuperar Senha</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/senha.css" />
+  <script src="../js/senha.js" defer></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../img/logo.png" alt="Logo Planify" />
+    </div>
+
+    <!-- Etapa 1: Email -->
+    <div class="form-box" id="etapa-email">
+      <h1>Recuperar Senha</h1>
+      <p class="info-text">Digite o e-mail associado à sua conta. Enviaremos um código de verificação.</p>
+      <div class="input-box">
+        <input type="email" id="email-recuperacao" placeholder="Digite seu e-mail" required />
+        <i class="bx bx-envelope"></i>
+      </div>
+      <button class="btn" onclick="enviarCodigo()">Enviar Código</button>
+    </div>
+
+    <!-- Etapa 2: Código -->
+    <div class="form-box hidden" id="etapa-codigo">
+      <h1>Verificação</h1>
+      <p class="info-text">Digite o código de 6 dígitos enviado para o seu e-mail.</p>
+      <div class="input-box">
+        <input type="text" id="codigo-validacao" placeholder="Digite o código" required />
+        <i class="bx bx-key"></i>
+      </div>
+      <p id="mensagem-erro"></p>
+      <button class="btn" onclick="validarCodigo()">Validar Código</button>
+    </div>
+
+    <!-- Etapa 3: Nova senha -->
+    <div class="form-box hidden" id="etapa-senha">
+      <h1>Nova Senha</h1>
+      <p class="info-text">Escolha uma nova senha segura para sua conta.</p>
+      <div class="input-box">
+        <input type="password" id="nova-senha" placeholder="Nova senha" required />
+        <i class="bx bx-lock"></i>
+      </div>
+      <div class="input-box">
+        <input type="password" id="confirmar-senha" placeholder="Confirmar senha" required />
+        <i class="bx bx-lock-alt"></i>
+      </div>
+      <button class="btn" onclick="redefinirSenha()">Redefinir</button>
+    </div>
+
+    <!-- Separador -->
+    <hr class="divider" />
+
+    <div class="Voltar">
+      <a href="./index.html">← Voltar ao login</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <p>© 2025 Planify. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>

@@ -1,0 +1,126 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(90deg, #003bbb, #c9d6ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 100%;
+      max-width: 600px;
+      height: 560px;
+    }
+
+    .form-box {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-box:not(.hidden) {
+      display: flex;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #123ebd;
+    }
+
+    .input-box {
+      position: relative;
+    }
+
+    .input-box input {
+        margin-top: 30px;
+      width: 80%;
+      padding: 12px 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      
+    }
+
+    .input-box i {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+      margin-top: 10px;
+    }
+
+    .btn {
+        margin-top: 30px;
+      padding: 12px;
+      background-color: #194fe2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    
+    }
+
+    .btn:hover {
+      background-color: #123ebd;
+    }
+
+    .Voltar {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .Voltar a {
+      color: #194fe2;
+      text-decoration: none;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    #mensagem-erro {
+      color: red;
+      text-align: center;
+    }
+    .logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  margin: 30px 0 10px;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ccc, transparent);
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 10px;
+}

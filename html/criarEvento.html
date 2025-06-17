@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Evento</title>
+  <link rel="stylesheet" href="../css/criarEvento.css">
+  <script src="../js/criarEvento.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="preview">
+      <input type="file" id="foto" style="display:none" />
+    </div>
+    <div class="form-section">
+      <form>
+        <div class="input-box">
+          <label for="titulo">Imagem do Evento:</label>
+          <input type="url" id="foto_perfil" placeholder="Image URL" required />
+          <i class="bx bx-image"></i>
+        </div>
+        <div class="form-group">
+          <label for="titulo">Título do Evento:</label>
+          <input type="text" id="titulo" />
+        </div>
+
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="data">Data do evento:</label>
+            <input type="date" id="data" />
+          </div>
+          <div class="form-group">
+            <label for="hora">Horário:</label>
+            <input type="time" id="hora" />
+          </div>
+          <div class="form-group">
+            <label for="local">Local:</label>
+            <input type="text" id="local" />
+          </div>
+          <div class="form-group" style="max-width: 70px;">
+            <label for="limite">Limite:</label>
+            <select id="limite">
+              <option>1</option>
+              <option>10</option>
+              <option>20</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="organizador">Organizador:</label>
+            <input type="text" id="organizador" placeholder="Nome do criador do evento (conta)" />
+          </div>
+
+          <div class="form-group">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option disabled selected>Carregando categorias...</option>
+              </select>
+              
+          </div>
+          <div class="form-group">
+            <label for="estado">Estados</label>
+            <select id="estado">
+                <option disabled selected>Carregando Estados...</option>
+              </select>
+              
+          </div>
+
+        </div>
+
+        <div class="form-group descricao">
+          <label for="descricao">Descrição Evento:</label>
+          <textarea id="descricao"></textarea>
+        </div>
+
+        <div class="form-group" style="max-width: 200px;">
+          <label for="valor">Valor:</label>
+          <input type="text" id="valor" />
+        </div>
+      </form>
+    </div>
+
+    <div class="footer">
+      <button>
+        <a href="./home.html">
+        <img src="../img/logo.png" alt="Descrição da imagem"></a>
+      </button>
+      <button class="btn">Cadastrar</button>
+    </div>
+  </div>
+
+
+</body>
+</html>

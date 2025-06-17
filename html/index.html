@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planify</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/scripts.js" defer></script>
+  <link rel="icon" href="../img/logo.jpg">
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- LOGIN -->
+    <div class="form-box login">
+      <form id="login-form">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="email" id="login-email" placeholder="Email" required />
+          <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="password" id="login-senha" placeholder="Password" required />
+          <i class="bx bx-lock"></i>
+        </div>
+        <div class="forgot-link">
+          <a href="./senha.html">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </div>
+
+    <!-- CADASTRO -->
+    <div class="form-box register">
+      <form id="register-form">
+        <h1>Registration</h1>
+        <div class="input-box">
+          <input type="text" id="nome" placeholder="Username" required />
+          <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box-date">
+          <input type="date" id="data_nascimento" required />
+        </div>
+        <div class="input-box">
+          <input type="email" id="email" placeholder="Email" required />
+          <i class="bx bxs-envelope"></i>
+        </div>
+        <div class="input-box">
+          <input type="password" id="senha" placeholder="Password" required />
+          <i class="bx bx-lock"></i>
+        </div>
+        <div class="input-box">
+          <input type="text" id="palavra_chave" placeholder="Keyword" required />
+          <i class="bx bxs-key"></i>
+        </div>
+        <div class="input-box">
+          <input type="url" id="foto_perfil" placeholder="Image URL" required />
+          <i class="bx bx-image"></i>
+        </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+
+    <div class="toggle-box">
+      <div class="toggle-panel toggle-left">
+        <h1>Bem Vindo ao Planify !</h1>
+        <p>Não possui uma conta?</p>
+        <button class="btn register-btn">Registre-se</button>
+      </div>
+      <div class="toggle-panel toggle-right">
+        <h1>Olá</h1>
+        <p>Já Possui conta?</p>
+        <button class="btn login-btn">Login</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

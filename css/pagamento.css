@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .card {
+    background: white;
+    width: 900px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: #2b64f1;
+    color: white;
+  }
+  
+  .info h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .info p {
+    margin: 4px 0;
+    font-weight: 500;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-img {
+    height: 120px;
+    border-radius: 8px;
+  }
+  
+  .pix-section {
+    padding: 24px;
+  }
+  
+  .pix-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .pix-logo {
+    width: 60px;
+  }
+  
+  .pix-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .pix-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
+  .pix-instructions {
+    max-width: 500px;
+    font-size: 15px;
+  }
+  
+  .pix-instructions ol {
+    padding-left: 20px;
+  }
+  
+  .qr-area {
+    text-align: center;
+  }
+  
+  .qr-code {
+    width: 180px;
+    height: 180px;
+  }
+  
+  hr {
+    margin: 16px 0;
+  }
+  
